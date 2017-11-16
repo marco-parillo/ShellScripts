@@ -1,1 +1,4 @@
-sha256sum manjaro-kde-17.1-pre2-stable-x86_64.iso | diff manjaro-kde-17.1-pre2-stable-x86_64.iso.sha256 -
+FILE=manjaro-kde-17.1-pre2-stable-x86_64.iso
+HASH=sha256
+
+$HASHsum $FILE | diff FILE.$HASH -
